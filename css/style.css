@@ -59,5 +59,14 @@
 .product-visual{display:flex;align-items:center;justify-content:center;padding:60px;background-image:linear-gradient(#ffffff0b 1px,transparent 1px),linear-gradient(90deg,#ffffff0b 1px,transparent 1px);background-size:72px 72px}
 .product-visual .preview-frame{width:100%;max-width:520px}
 .product-visual .preview-body{min-height:380px}
-@media(max-width:800px){.product-alt{grid-template-columns:1fr}.product-alt .product-copy{order:-1}.product-alt .product-visual{padding:40px 6vw}}
-@media(max-width:500px){.brand-plate{padding:10px 16px}.brand-plate img{height:24px}}
+@media(max-width:800px){.product-alt{grid-template-columns:1fr}.product-alt .product-copy{order:-1}.product-alt .product-visual{padding:40px 6vw}.product-visual .preview-body{min-height:240px}}
+@media(max-width:500px){.brand-plate{padding:10px 16px}.brand-plate img{height:24px}.product-visual .preview-body{min-height:200px}}
+
+/* Ritmo e respiro no mobile — evita a sensação de bloco único e apagado */
+@media(max-width:800px){
+.nav-toggle{gap:5px}
+.nav-toggle span{width:22px}
+.stats-band,.pillars-band{background:#0c0c10;margin-block:10vw}
+.stat-cell,.pillars-grid article{padding-inline:7vw}
+.pillars-grid article{padding-block:36px}
+}
